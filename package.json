@@ -45,7 +45,7 @@
     "mocha": "^3.1.0",
     "source-map-support": "^0.4.3"
   },
-  "repository": "/internet-reset",
+  "repository": "https://github.com/MiracleBlue/hope-ls",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --opts ./mocha.opts ./lib/**/*.spec.js",
