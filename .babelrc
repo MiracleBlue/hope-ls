@@ -1,0 +1,9 @@
+{
+    "presets": ["es2015", "stage-0"],
+    "plugins": [
+        "pipe-operator",
+        ["transform-react-jsx", {
+            "pragma": "Lucky.createElement"
+        }]
+    ]
+}
