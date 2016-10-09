@@ -6,6 +6,9 @@
   "loadEagerly": [
     "lib/**/*.js"
   ],
+  "dontLoad": [
+    "dist/**/*.*"  
+  ],
   "plugins": {
     "doc_comment": {
       "fullDocs": true,
