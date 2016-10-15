@@ -4,10 +4,10 @@
     "chai"
   ],
   "loadEagerly": [
-    "lib/**/*.js"
+    
   ],
   "dontLoad": [
-    "dist/**/*.*"  
+    "dist/**/*.*"
   ],
   "plugins": {
     "doc_comment": {
