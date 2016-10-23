@@ -28,6 +28,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.16.3",
     "chai": "^3.5.0",
+    "chai-struct": "^2.0.1",
     "del": "^2.0.2",
     "eslint": "^2.1.0",
     "eslint-config-xo-space": "^0.13.0",
@@ -50,7 +51,7 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "NODE_ENV=test gulp babel; ./node_modules/.bin/mocha --opts ./mocha.opts",
-    "dev": "devtool -r babel-register --no-source-maps debugging.js --watch",
+    "dev": "gulp babel; devtool dist/index.js",
     "testing": "./node_modules/.bin/onchange '**/*.js' -e 'dist/**/*' -v -i -- npm run test",
     "start": "gulp babel; node ./dist/index.js"
   },
