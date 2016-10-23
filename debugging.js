@@ -1,3 +1,2 @@
-import * as types from './lib/Lucky/utils/types';
-
-window.types = types;
+var fileInfo = require('./lib/ls/utils/fileInfo');
+fileInfo('./.gitignore').then(data => console.log(data));
